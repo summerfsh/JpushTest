@@ -6,6 +6,7 @@ import android.content.Intent;
 import android.content.IntentFilter;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.widget.EditText;
 
 public class MainActivity extends AppCompatActivity {
@@ -54,6 +55,8 @@ public class MessageReceiver extends BroadcastReceiver {
             StringBuilder showMsg = new StringBuilder();
             showMsg.append(KEY_MESSAGE + " : " + messge + "\n");
             setCostomMsg(showMsg.toString());
+
+            Log.e("TAG","test github");
         }
     }
 
