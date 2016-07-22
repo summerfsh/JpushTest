@@ -23,6 +23,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
         msgText = (EditText)findViewById(R.id.msg_rec);
         registerMessageReceiver();  // used for receive msg
+        Log.e("TAG","bug_02");
 
     }
 
